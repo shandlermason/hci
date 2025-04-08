@@ -5,4 +5,4 @@ run = "java TicTacToeGame.java"
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "java TicTacToeGame.java"]
+run = ["sh", "-c", "mvn exec:java"]
