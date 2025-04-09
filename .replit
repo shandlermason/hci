@@ -1,5 +1,5 @@
 modules = ["java-graalvm22.3"]
-run = "java TicTacToeGame.java"
+run = "mvn exec:java"
 
 [nix]
 channel = "stable-24_05"
