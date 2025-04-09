@@ -31,8 +31,8 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>Task/src/main/java</sourceDirectory> <!-- Valid path-->
-        <testSourceDirectory>Task/src/test/java</testSourceDirectory> <!-- Valid path-->
+        <sourceDirectory>src/main/java</sourceDirectory> <!-- Valid path-->
+        <testSourceDirectory>src/test/java</testSourceDirectory> <!-- Valid path-->
         <plugins>
             <!-- Maven Compiler Plugin for Java 19 -->
             <plugin>
