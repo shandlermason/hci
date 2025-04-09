@@ -12,11 +12,16 @@ public class GameTest {
 
         // Simulate a winning scenario for Player X in the top row
         game.placeMark(0, 0);  // X
-        game.placeMark(1, 1);  // O
+        game.placeMark(1, 0);  // O
         game.placeMark(0, 1);  // X
         game.placeMark(2, 2);  // O
 
-        // Assert that the game detects a win
-        assertTrue(game.checkForWin(), "Player X should have won with the top row.");
+        // Assert: The game should not detect a win yet (not all marks placed)
+        assertTrue(!game.checkForWin(), "The game should not detect a win yet (not all marks placed).");
+
+        // Place the final mark to complete the row
+
+        // Assert: The game should now detect a win.
+        assertTrue(game.checkForWin(), "Player X should win with the top row.");
     }
 }
